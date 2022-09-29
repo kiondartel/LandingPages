@@ -1,7 +1,12 @@
+import { Heading } from '../../components/heading';
+import * as Styled from './styles';
+
 function Home() {
   return (
     <div className="App">
-      <h1>OI</h1>
+      <Styled.Wrapper>
+        <Heading>DALE DELE DOLE</Heading>
+      </Styled.Wrapper>
     </div>
   );
 }
