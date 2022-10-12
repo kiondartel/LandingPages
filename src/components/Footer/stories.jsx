@@ -4,7 +4,7 @@ export default {
   title: 'Footer',
   component: Footer,
   args: {
-    html: `<p>Feito por Gabriel Lucas</p>`,
+    footerHtml: `<p>Feito por Gabriel Lucas</p>`,
   },
 };
 
