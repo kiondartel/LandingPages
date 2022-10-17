@@ -1,11 +1,8 @@
 export const theme = {
   colors: {
-    mainBg: 'red',
-    secondaryBg: '#dc143c',
-    primaryColor: 'black',
-    lightbg: '#FFFFFF',
-    darBg: '#0A1128',
-    white: 'white',
+    primaryColor: '#0A1128',
+    secondaryColor: '#dc143c',
+    white: '#FFFFFF',
     mediumGray: '#DDDDDD',
   },
   font: {

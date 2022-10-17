@@ -12,27 +12,27 @@ export const Container = styled.div`
 
 export const Grid = styled.div`
   ${({ theme }) => css`
-      counter-reset: grid-counter;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: ${theme.spacings.large};
-      overflow: hidden;
-      width: 100%;
+    counter-reset: grid-counter;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: ${theme.spacings.large};
+    overflow: hidden;
+    width: 100%;
 
-      @media ${theme.media.lteMedium} {
-        grid-template-columns: 1fr;
-      }
+    @media ${theme.media.lteMedium} {
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 
 export const GridElement = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     ${HeadingContainer} {
       position: relative;
       left: 5rem;
     }
 
-    ${HeadingContainer}::before{
+    ${HeadingContainer}::before {
       counter-increment: grid-counter;
       content: counter(grid-counter);
       position: absolute;

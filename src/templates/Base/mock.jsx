@@ -19,6 +19,5 @@ export const mockBase = {
     text: 'Logo',
     link: '#',
   },
-
-  html: '<p>Feito por Gabriel</p>',
+  footerHtml: '<p>Teste de footer</p>',
 };

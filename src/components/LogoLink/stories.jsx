@@ -4,27 +4,21 @@ export default {
   title: 'LogoLink',
   component: LogoLink,
   args: {
-    children: 'LogoLink',
-    srcImage: 'assets/images/nvidia.png', //se der ruim usa logo.svg
+    text: 'Logo',
+    srcImg: '',
     link: 'http://localhost',
+  },
+  argTypes: {
+    text: { type: 'string' },
+    srcImg: { type: 'string' },
+    link: { type: 'string' },
   },
 };
 
-export const ImageOnly = (args) => {
+export const Template = (args) => {
   return (
     <div>
       <LogoLink {...args} />
     </div>
   );
-};
-export const TextOnly = (args) => {
-  return (
-    <div>
-      <LogoLink {...args} />
-    </div>
-  );
-};
-
-TextOnly.args = {
-  srcImg: '',
 };

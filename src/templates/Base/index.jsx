@@ -1,23 +1,29 @@
-import { Menu } from '../../components/Menu';
 import P from 'prop-types';
 import * as Styled from './styles';
-import { GoTop } from '../../components/GoTop';
+import { Menu } from '../../components/Menu';
 import { Footer } from '../../components/Footer';
+import { GoTop } from '../../components/GoTop';
 
-export const Base = ({ links, logoData, html, children }) => {
+export const Base = ({ links, logoData, footerHtml, children }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    window && window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <Menu links={links} logoData={logoData} />
       <Styled.Container>
         {children}
-        <Footer html={html} />
+        <Footer footerHtml={footerHtml} />
       </Styled.Container>
-      <GoTop />
+      <GoTop handleClick={handleClick} />
     </>
   );
 };
+
 Base.propTypes = {
   children: P.node.isRequired,
   ...Menu.propTypes,
-  html: P.string.isRequired,
+  footerHtml: P.string.isRequired,
 };

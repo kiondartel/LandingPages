@@ -1,5 +1,5 @@
 import P from 'prop-types';
-import * as Styled from './stylesstyled';
+import * as Styled from './styles';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';

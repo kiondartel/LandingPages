@@ -1,15 +1,15 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     text-align: center;
     max-width: 58rem;
     margin: 0 auto;
   `}
 `;
 
-export const HTML = styled.div`
+export const Html = styled.div`
   ${({ theme }) => css`
-    margin: ${theme.colors.secondaryBg};
+    margin: ${theme.spacings.xhuge} 0;
   `}
 `;

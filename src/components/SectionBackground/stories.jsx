@@ -1,28 +1,27 @@
 import { SectionBackground } from '.';
-import { SectionContainer } from '../SectionContainer';
 
 export default {
   title: 'SectionBackground',
   component: SectionBackground,
   args: {
     children: (
-      <SectionContainer>
-        <div>
-          <h1>SectionBackground</h1>
-          <p>
-            loremIpsum dale cabloco feio da porra, loremIpsum dale cabloco feio
-            da porra loremIpsum dale cabloco feio da porra,loremIpsum dale
-            cabloco feio da porra loremIpsum dale cabloco feio da
-            porra,loremIpsum dale cabloco feio da porra,loremIpsum dale cabloco
-            feio da porra loremIpsum
-          </p>
-        </div>
-      </SectionContainer>
+      <div>
+        <h1>SectionBackground</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem et
+          deleniti laudantium mollitia aspernatur, ullam iure quasi! Incidunt
+          culpa unde sapiente. Facilis corrupti quod ex voluptatem similique
+          placeat nulla inventore!
+        </p>
+      </div>
     ),
+    background: true,
   },
-
-  argsTypes: {
-    children: { type: '' },
+  argTypes: {
+    children: {
+      table: { disable: true },
+    },
+    background: { type: 'boolean' },
   },
 };
 
