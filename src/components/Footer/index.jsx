@@ -3,11 +3,11 @@ import * as Styled from './styles';
 import { TextComponent } from '../TextComponent';
 import { SectionContainer } from '../SectionContainer';
 
-export const Footer = ({ footerHtml }) => {
+export const Footer = () => {
   return (
     <Styled.Container>
       <SectionContainer>
-        <TextComponent>{footerHtml}</TextComponent>
+        <TextComponent>Feito por Gabriel Lucas </TextComponent>
       </SectionContainer>
     </Styled.Container>
   );
